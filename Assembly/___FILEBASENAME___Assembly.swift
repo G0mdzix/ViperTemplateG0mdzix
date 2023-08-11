@@ -26,7 +26,9 @@ private enum CreateModules {
   }
 
   static func buildInteractor() -> ___VARIABLE_MODULENAME___Interactor {
-    let interactor = ___VARIABLE_MODULENAME___Interactor()
+    let interactor = ___VARIABLE_MODULENAME___Interactor(
+      services: ___VARIABLE_MODULENAME___Interactor.Services()
+    )
     return interactor
   }
 
